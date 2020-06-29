@@ -142,67 +142,67 @@ const strings = {
 		"Windowed": "Windowed"
 	},
 	"Русский": {
-		"AdvanceHelp": "To advance through the game, press the space key or click.",
+		"AdvanceHelp": "Чтобы играть нажмите на пробел или кнопку мыши.",
 		"Audio": "Аудио",
 		"AutoPlay": "Авто",
-		"AutoPlaySpeed": "Autoplay Speed",
+		"AutoPlaySpeed": "Скорость текста",
 
 		"Back": "Назад",
-		"BackButton": "Back.",
+		"BackButton": "Назад.",
 
 		"Cancel": "Отмена",
 		"Close": "Закрыть",
-		"Confirm": "Do you want to quit?",
+		"Confirm": "Выйти?",
 
-		"FullScreen": "Full Screen",
+		"FullScreen": "На полный экран",
 
 		"Help": "Помощь",
-		"Hide": "Hide",
-		"HideButton": "Hide Text.",
+		"Hide": "Скрыть",
+		"HideButton": "Скрыть текст.",
 		
 
-		"iOSAudioWarning": "Audio settings are not supported on iOS.",
+		"iOSAudioWarning": "Настройки аудио не поддерживаются на iOS.",
 
-		"Language": "Language",
+		"Language": "Язык",
 		"Leaderboard": "Лидерборд",
 		"Load": "Загрузить",
-		"LoadAutoSaveSlots": "Auto Saved Games",
-		"LoadButton": "Open the Load Screen.",
-		"Loading": "Loading",
-		"LoadingMessage": "Wait while the assets are loaded.",
-		"LoadSlots": "Saved Games",
-		"LocalStorageWarning": "Local Storage is not available in this browser.",
+		"LoadAutoSaveSlots": "Автосохранялки",
+		"LoadButton": "Открыть меню загрузки игры.",
+		"Loading": "Загрузка",
+		"LoadingMessage": "Подождите пока загрузятся все сцены.",
+		"LoadSlots": "Сохраненные игры",
+		"LocalStorageWarning": "Этот браузер не поддерживает сохранения.",
 
-		"Music": "Music Volume",
+		"Music": "Громкость музыки",
 
-		"NoSavedGames": "No saved games.",
-		"NoAutoSavedGames": "No automatically saved games.",
+		"NoSavedGames": "Нет сохранений.",
+		"NoAutoSavedGames": "Нет автоматически сохраненных игр.",
 
-		"Overwrite": "Overwrite",
+		"Overwrite": "Перезаписать",
 
-		"QuickButtons": "Quick Menu Buttons",
-		"Quit": "Quit",
-		"QuitButton": "Quit Game.",
+		"QuickButtons": "Быстрые пункты меню",
+		"Quit": "Выйти",
+		"QuitButton": "Выйти из игры.",
 
-		"Resolution": "Resolution",
+		"Resolution": "Расширение",
 
 		"Save": "Сохранить",
-		"SaveButon": "Open the Save Screen.",
-		"SaveInSlot": "Save in slot",
+		"SaveButon": "Открыть меню сохранения.",
+		"SaveInSlot": "Сохранить в слот",
 		"Settings": "Найстройки",
-		"SettingsButton": "Open the Settings Screen.",
-		"Show": "Show",
-		"SlotDeletion": "Are you sure you want to delete this slot?",
-		"SlotOverwrite": "Are you sure you want to overwrite this slot?",
-		"Sound": "Sound Volume",
+		"SettingsButton": "Октрыть меню настроек.",
+		"Show": "Показать",
+		"SlotDeletion": "Вы уверены, что хотите удалить данный слот?",
+		"SlotOverwrite": "Вы уверены, что хотите перезаписать данный слот?",
+		"Sound": "Горомкость звуков",
 		"Start": "Играть",
-		"Stop": "Stop",
+		"Stop": "Стоп",
 
-		"TextSpeed": "Text Speed",
+		"TextSpeed": "Скорость тектса",
 
-		"Voice": "Voice Volume",
+		"Voice": "Громкость голоса",
 
-		"Windowed": "Windowed"
+		"Windowed": "В окне"
 	},
 	"Español": {
 		"AdvanceHelp": "Para avanzar en el juego, presiona espacio o haz click.",

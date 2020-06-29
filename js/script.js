@@ -20,12 +20,12 @@ let messages = {
 	"Help": {
 		"Title": "",
 		"Subtitle": "",
-		"Message": "<iframe width='424' height='238' src='https://www.youtube.com/embed/RKTKv5TSfXM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+		"Message": "<iframe width='470' height='402' src='https://edpuzzle.com/embed/assignments/5ef9949d010c793f32f726d3/watch' frameborder='0' allowfullscreen></iframe>"
 	},
 	"Youtube": {
 		"Title": "",	
 		"Subtitle": "",
-		"Message": ""
+		"Message": '<iframe src="https://learningapps.org/watch?app=6786525" style="border:0px;width:100%;height:500px" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>'
 	}
 };
 
@@ -70,11 +70,17 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-	"intro": "intro.jpg"
+	"intro": "intro2.jpg",
+	"milkyway": "milkyway.jpg",
+	"solarsystem": "solarsystem.jpg",
 };
 
 // Define the Characters
 const characters = {
+	"p": {
+		"Name": "{{player.name}}",
+		"Color": "#ff3951"
+	},
 	"h": {
 		"Name": "Sensei",
 		"Color": "#5bcaff",
@@ -87,8 +93,9 @@ const characters = {
 let script = {
 	"English": {
 	"Start": [
-		"notify Welcome",
+	
 		/*
+		"notify Welcome",
 		{
 			"Input": {
 				"Text": "What is your name?",
@@ -103,10 +110,20 @@ let script = {
 			}
 		},
 		*/
+		"scene white with fadeIn",
+		"centered Who am I?",
+		"centered Where am I?",
+		"scene milkyway with pulse",
+		"wait 2000",
+		"jump Universe"
+		],
+		"Universe": [
+		"scene solarsystem with fadeIn",
+		"wait 2000",
 		"scene intro with fadeIn",
 		"particles universe",
 		"show h Normal left",
-		"h Hi {{player.Name}} Welcome to Ala-Too University!",
+		"h Hi, {{player.name}}! Welcome to Ala-Too University!",
 
 		{
 			"Choice": {
@@ -128,6 +145,27 @@ let script = {
 		"h That's awesome!",
 		"h Then you are ready to go ahead and create an amazing Game!",
 		"display message Youtube",
+		{
+			"Choice": {
+				"Dialog": "h In what year Ala-Too University was founded?",
+				"2001": {
+					"Text": "2001",
+					"Do": ""
+				},
+				"1999": {
+					"Text": "1999",
+					"Do": ""
+				},
+				"1996": {
+					"Text": "1996",
+					"Do": ""
+				},
+				"1896": {
+					"Text": "1896",
+					"Do": ""
+				}
+			}
+		},
 		"h I can't wait to see what story you'll tell!",
 		"end"
 	],
