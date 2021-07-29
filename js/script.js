@@ -81,7 +81,7 @@ const characters = {
 		"Name": "{{player.name}}",
 		"Color": "#ff3951"
 	},
-	"h": {
+	"s": {
 		"Name": "Security",
 		"Color": "#5bcaff",
 		"Images": {
@@ -91,6 +91,16 @@ const characters = {
 };
 
 let script = {
+	"Русский": {
+		"Start": [
+			"particles universe",
+			"notify Welcome",
+			"scene intro with fadeIn",
+			"particles universe",
+			"show s Normal left",
+			"s Представляю тебе университет Ala-Too!",
+		],
+	},
 	"English": {
 	"Start": [
 		"jump Universe"
@@ -215,63 +225,6 @@ let script = {
 			"end"
 		]
 	},
-	"Русский": {
-		"Start": [
-			"particles universe",
-			"notify Welcome",
-			/*
-			{
-				"Input": {
-					"Text": "What is your name?",
-					"Validation": function (input) {
-						return input.trim().length > 0;
-					},
-					"Save": function (input) {
-						storage.player.Name = input;
-						return true;
-					},
-					"Warning": "You must enter a name!"
-				}
-			},
-			*/
-			"scene intro with fadeIn",
-			"particles universe",
-			"show h Normal left",
-			"h Hola {{player.Name}} Amigo! Welcome to Ala-Too University!",
-	
-			{
-				"Choice": {
-					"Dialog": "h Have you already read some documentation?",
-					"Yes": {
-						"Text": "Yes",
-						"Do": "jump Yes"
-					},
-					"No": {
-						"Text": "No",
-						"Do": "jump No"
-					}
-				}
-			}
-		],
-	
-		"Yes": [
-	
-			"h That's awesome!",
-			"h Then you are ready to go ahead and create an amazing Game!",
-			"h I can't wait to see what story you'll tell!",
-			"end"
-		],
-	
-		"No": [
-	
-			"h You can do it now.",
-	
-			"display message Help",
-	
-			"h Go ahead and create an amazing Game!",
-			"h I can't wait to see what story you'll tell!",
-			"end"
-		]
-		}	
+		
 
 };
