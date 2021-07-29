@@ -70,7 +70,7 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-	"intro": "intro2.jpg",
+	"intro": "entrance.jpg",
 	"milkyway": "milkyway.jpg",
 	"solarsystem": "solarsystem.jpg",
 };
@@ -82,10 +82,10 @@ const characters = {
 		"Color": "#ff3951"
 	},
 	"h": {
-		"Name": "Sensei",
+		"Name": "Security",
 		"Color": "#5bcaff",
 		"Images": {
-			"Normal": "kakashi.png"
+			"Normal": "security.png"
 		}
 	}
 };
@@ -93,33 +93,9 @@ const characters = {
 let script = {
 	"English": {
 	"Start": [
-	
-		/*
-		"notify Welcome",
-		{
-			"Input": {
-				"Text": "What is your name?",
-				"Validation": function (input) {
-					return input.trim().length > 0;
-				},
-				"Save": function (input) {
-					storage.player.Name = input;
-					return true;
-				},
-				"Warning": "You must enter a name!"
-			}
-		},
-		*/
-		"scene white with fadeIn",
-		"centered Who am I?",
-		"centered Where am I?",
-		"scene milkyway with pulse",
-		"wait 2000",
 		"jump Universe"
 		],
 		"Universe": [
-		"scene solarsystem with fadeIn",
-		"wait 2000",
 		"scene intro with fadeIn",
 		"particles universe",
 		"show h Normal left",
